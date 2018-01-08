@@ -50,10 +50,10 @@ function nextBlock() {
   const time = globalTime++;
 
   const prevHead = encoding.U32(height - 1);
-  const prevHash = digest.hash256(prevHead);
+  const prevHash = digest.throestl(prevHead);
 
   const head = encoding.U32(height);
-  const hash = digest.hash256(head);
+  const hash = digest.throestl(head);
 
   return {
     hash: hash.toString('hex'),

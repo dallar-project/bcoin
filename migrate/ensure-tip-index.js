@@ -40,7 +40,7 @@ async function checkVersion() {
 
 function entryFromRaw(data) {
   const p = new BufferReader(data, true);
-  const hash = digest.hash256(p.readBytes(80));
+  const hash = digest.throestl(p.readBytes(80));
   const entry = {};
 
   p.seek(-80);

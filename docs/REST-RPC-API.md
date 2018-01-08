@@ -157,7 +157,7 @@ Example:
 ### Wallet Auth
 
 Individual wallets have their own api keys, referred to internally as "tokens"
-(a 32 byte hash - calculated as `HASH256(m/44'->ec-private-key|tokenDepth)`).
+(a 32 byte hash - calculated as `throestl(m/44'->ec-private-key|tokenDepth)`).
 
 A wallet is always created with a corresponding token. When using api endpoints
 for a specific wallet, the token must be sent back in the query string or json

@@ -582,7 +582,7 @@ async function isMainChain(entry, tip) {
 
 function entryFromRaw(data) {
   const br = new BufferReader(data, true);
-  const hash = digest.hash256(br.readBytes(80));
+  const hash = digest.throestl(br.readBytes(80));
 
   br.seek(-80);
 
