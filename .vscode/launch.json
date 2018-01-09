@@ -10,8 +10,11 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}\\bin\\node",
             "args": [
-                 "--nodes", "127.0.0.1:40032"
-            ]
+                 "--nodes", "127.0.0.1:40032",
+                 "--max-outbound", "1",
+                 "--debug"
+            ],
+            "outputCapture": "std"
         }
     ]
 }
